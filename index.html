@@ -1109,16 +1109,28 @@
         <div class="stat-label">Total Supply</div>
       </div>
       <div class="stat-item reveal">
-        <span class="stat-number">60%</span>
+        <span class="stat-number">100%</span>
         <div class="stat-label">Liquidity Locked</div>
       </div>
       <div class="stat-item reveal">
         <span class="stat-number">1%</span>
-        <div class="stat-label">Auto Burn Per Transaction</div>
+        <div class="stat-label">Transaction Tax</div>
       </div>
       <div class="stat-item reveal">
-        <span class="stat-number">0.5%</span>
-        <div class="stat-label">0.5% Burn Buy + 0.5% Burn Sell</div>
+        <span class="stat-number">0.10%</span>
+        <div class="stat-label">🔥 Burn</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">0.25%</span>
+        <div class="stat-label">👥 Holders</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">0.40%</span>
+        <div class="stat-label">🏊 LP</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">0.25%</span>
+        <div class="stat-label">⚙️ Dev</div>
       </div>
     </div>
   </section>
@@ -1139,65 +1151,71 @@
     </div>
   </section>
 
-  <!-- TOKENOMICS -->
-  <section id="tokenomics">
-    <div class="tokenomics-inner">
-      <div class="tokenomics-header">
-        <div class="section-tag" style="justify-content:center;">Token Distribution</div>
-        <h2 class="section-title reveal">TOKENOMICS</h2>
-        <p class="section-text reveal" style="max-width:500px;margin:0 auto;">Total Supply: <strong style="color:var(--gold);">1,000,000,000 $WUEK</strong></p>
+  <!-- STAKING & TAX -->
+  <section id="tokenomics" style="padding:8rem 4rem;background:var(--dark2);position:relative;overflow:hidden;">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div style="text-align:center;margin-bottom:4rem;">
+        <div class="section-tag" style="justify-content:center;">Rewards & Tax</div>
+        <h2 class="section-title reveal">STAKING &<br><span style="color:var(--gold);">TAX BREAKDOWN</span></h2>
+        <p class="section-text reveal" style="max-width:500px;margin:0 auto;">Total Supply: <strong style="color:var(--gold);">1,000,000,000 $WUEK</strong> — Fully Circulating</p>
       </div>
 
-      <div class="token-grid">
-        <div class="token-card reveal">
-          <div class="token-icon">🏊</div>
-          <div class="token-pct">60%</div>
-          <div class="token-name">Liquidity Pool</div>
-          <div class="token-amount">600,000,000 WUEK</div>
-          <div class="token-desc">🔒 LOCKED — Permanently locked in PancakeSwap. LP tokens locked forever for maximum security and investor confidence.</div>
+      <!-- STAKING CARD -->
+      <div style="background:linear-gradient(135deg,rgba(245,200,66,0.08),rgba(245,200,66,0.02));border:1px solid rgba(245,200,66,0.3);padding:2.5rem;margin-bottom:3rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;" class="reveal">
+        <div>
+          <div style="font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">💎 Staking Reward</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--gold);line-height:1;margin-bottom:0.5rem;">50% APY</h3>
+          <p style="font-size:0.8rem;line-height:1.8;color:rgba(240,236,224,0.6);">Distributed every hour to all eligible holders. Simply hold $WUEK in your wallet and earn passively — no staking platform needed.</p>
         </div>
-        <div class="token-card reveal">
-          <div class="token-icon">💎</div>
-          <div class="token-pct">10%</div>
-          <div class="token-name">Staking Reward</div>
-          <div class="token-amount">100,000,000 WUEK</div>
-          <div class="token-desc">50% APY — Distributed every hour to stakers. Hold & earn $WUEK passively around the clock.</div>
-        </div>
-        <div class="token-card reveal">
-          <div class="token-icon">📢</div>
-          <div class="token-pct">10%</div>
-          <div class="token-name">Marketing</div>
-          <div class="token-amount">100,000,000 WUEK</div>
-          <div class="token-desc">Used for influencer campaigns, exchange listings, and community growth initiatives.</div>
-        </div>
-        <div class="token-card reveal">
-          <div class="token-icon">⚙️</div>
-          <div class="token-pct">8%</div>
-          <div class="token-name">Development</div>
-          <div class="token-amount">80,000,000 WUEK</div>
-          <div class="token-desc">🔒 LOCKED — Funds ongoing development, smart contract upgrades, and platform expansion.</div>
-        </div>
-        <div class="token-card reveal">
-          <div class="token-icon">🤝</div>
-          <div class="token-pct">7%</div>
-          <div class="token-name">Community</div>
-          <div class="token-amount">70,000,000 WUEK</div>
-          <div class="token-desc">Rewards for active community members, loyal holders, and loyalty program participants.</div>
-        </div>
-        <div class="token-card reveal">
-          <div class="token-icon">🎁</div>
-          <div class="token-pct">5%</div>
-          <div class="token-name">AirDrop</div>
-          <div class="token-amount">50,000,000 WUEK</div>
-          <div class="token-desc">Distributed to early adopters and participants of the first airdrop campaign.</div>
+        <div style="border-left:1px solid rgba(245,200,66,0.15);padding-left:2rem;">
+          <div style="margin-bottom:1.5rem;">
+            <div style="font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.4);">Minimum Hold</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);">10,000,000</div>
+            <div style="font-size:0.7rem;color:rgba(240,236,224,0.4);">$WUEK tokens required</div>
+          </div>
+          <div>
+            <div style="font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.4);">Distribution</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);">Every Hour ⏰</div>
+            <div style="font-size:0.7rem;color:rgba(240,236,224,0.4);">Automatic — no claiming needed</div>
+          </div>
         </div>
       </div>
 
-      <div class="burn-banner reveal">
-        <div class="burn-icon">🔥</div>
-        <div class="burn-text">
-          <h4>Auto-Burn Mechanism — 0.5% Buy + 0.5% Sell = Total 1%</h4>
-          <p>Every buy transaction burns 0.5% and every sell burns 0.5% — total 1% per round trip. Supply decreases automatically over time, creating natural scarcity and upward price pressure for holders.</p>
+      <!-- TAX BREAKDOWN -->
+      <div style="text-align:center;margin-bottom:1.5rem;" class="reveal">
+        <div class="burn-banner">
+          <div class="burn-icon">💰</div>
+          <div class="burn-text">
+            <h4>Transaction Tax — 1% Per Transaction (Buy & Sell)</h4>
+            <p>Every transaction automatically distributes 1% across the ecosystem — burning supply, rewarding holders, strengthening liquidity, and funding development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;" class="reveal">
+        <div style="background:rgba(255,77,109,0.06);border:1px solid rgba(255,77,109,0.25);padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">🔥</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#ff4d6d;line-height:1;">0.10%</div>
+          <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.5);margin-top:0.3rem;">Auto Burn</div>
+          <div style="font-size:0.7rem;color:rgba(240,236,224,0.35);margin-top:0.5rem;">Permanently removed from supply</div>
+        </div>
+        <div style="background:rgba(57,217,138,0.06);border:1px solid rgba(57,217,138,0.25);padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">👥</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#39d98a;line-height:1;">0.25%</div>
+          <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.5);margin-top:0.3rem;">Holders</div>
+          <div style="font-size:0.7rem;color:rgba(240,236,224,0.35);margin-top:0.5rem;">Redistributed to all holders</div>
+        </div>
+        <div style="background:rgba(79,195,247,0.06);border:1px solid rgba(79,195,247,0.25);padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">🏊</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#4fc3f7;line-height:1;">0.40%</div>
+          <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.5);margin-top:0.3rem;">Liquidity Pool</div>
+          <div style="font-size:0.7rem;color:rgba(240,236,224,0.35);margin-top:0.5rem;">Added to LP for price stability</div>
+        </div>
+        <div style="background:rgba(245,200,66,0.06);border:1px solid rgba(245,200,66,0.25);padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">⚙️</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:#f5c842;line-height:1;">0.25%</div>
+          <div style="font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,236,224,0.5);margin-top:0.3rem;">Development</div>
+          <div style="font-size:0.7rem;color:rgba(240,236,224,0.35);margin-top:0.5rem;">Funds ongoing development</div>
         </div>
       </div>
     </div>
